@@ -522,3 +522,66 @@
         height: 80px; 
       }
     }
+    /* changing  */
+    @media (max-width: 768px) {
+      header {
+        padding: 2rem 1rem; /* Reduced padding for smaller screens */
+      }
+    
+      .pw {
+        flex-direction: column; /* Stack the header content vertically */
+        align-items: center; /* Center align the items */
+        gap: 20px; /* Space between the image and text */
+      }
+    
+      .img {
+        width: 180px; /* Adjust the image size */
+        height: 180px; /* Adjust the height of the image */
+        margin: 0 auto; /* Center the image */
+      }
+    
+      .ns {
+        font-size: 1.5rem; /* Reduce the font size for name */
+        margin-top: 10px;
+        color: white;
+      }
+    
+      .pp {
+        font-size: 1rem; /* Adjust the font size of the paragraph */
+        text-align: center; /* Center the text */
+        max-width: 90%; /* Limit the width of the paragraph */
+        margin: 0 auto; /* Center the paragraph */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      header {
+        font-size: 16px;
+        padding: 1.5rem 1rem; /* Further reduce padding on very small screens */
+      }
+    
+      .pw {
+        flex-direction: column; /* Stack the header content vertically */
+        align-items: center; /* Center align the items */
+        gap: 15px; /* Space between the image and text */
+      }
+    
+      .img {
+        width: 150px; /* Adjust the image size for small screens */
+        height: 150px; /* Adjust the height of the image */
+      }
+    
+      .ns {
+        font-size: 1.2rem; /* Reduce the font size for the name */
+        margin-top: 10px;
+        color: white;
+      }
+    
+      .pp {
+        font-size: 0.9rem; /* Reduce the font size of the paragraph */
+        text-align: center; /* Center the text */
+        max-width: 90%; /* Limit the width of the paragraph */
+        margin: 0 auto; /* Center the paragraph */
+      }
+    }
+    
