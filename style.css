@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
 header
 {
     /* background: linear-gradient(135deg, #ff6900, #00d084, #0693e3); */
@@ -16,12 +19,11 @@ header
     /* padding: 3rem 1rem; */
     /* text-align: center; */
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); */
-    background-color: #34495e; /* Rich gray for a professional feel */
-  color: #ecf0f1; /* Light gray for text */
-  padding: 6rem 2rem 3rem;
+    background-color: #34495e; 
+  color: #ecf0f1;  
+  /* padding: 6rem 2rem 3rem; */
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
 }
 main
 {
@@ -32,7 +34,8 @@ main
      
          background: linear-gradient(135deg, #f4f7fc 0%, #e0e7ff 100%);
     padding: 4rem 2rem;
-         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+         font-family: Tahoma, Geneva, Verdana, sans-serif;
       
          
 }
@@ -42,7 +45,7 @@ body {
     color: #333;
   }
   .ns {
-    text-align: center;
+    text-align: right;
     display: flex;
     justify-content: center;
     margin-top: 4px;
@@ -55,11 +58,11 @@ body {
 nav
 {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     border: #00d084;
     list-style: none;
     /* margin-top: 10%; */
-    padding: 10px;
+    /* padding: 10px; */
     
    
     
@@ -111,36 +114,40 @@ nav ul li a {
     margin: 66px;
     gap: 10%;
 }
-li
-{
-    
-    border: 3px transparent;
-    border-radius: 23%;
-    padding: 10px;
-    /* color: #333; */
-    color: #fff;
-    cursor: pointer;
-    background-color: #fafafa;
-    color: white;
-    list-style: none;
-    
+li {
+  border: 3px transparent;
+  border-radius: 23%;
+  padding: 10px;
+  /* color: #333; */
+  color:#fafafa ;
+  cursor: pointer;
+  /* background-color: #fafafa; */
+  list-style: none;
+  font-size: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow effect */
+  transition: color 0.3s ease, text-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+  
+}
 
-
-   
+li:hover {
+  transform: translateY(-5px);
+  color: #fff; /* White font color on hover */
+  background-color: #34495e; /* A soft dark blue/grey background on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* More pronounced shadow on hover */
 }
 
 .social
 {
     display: flex;
-    gap: 10px;
-    margin-left:40%;
+    justify-content: left;
+
+    gap: 19px;
+    /* margin-left:40%; */
 
 }
-li:hover {
-    transform: translateY(-5px);
-    color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
+
+
 .pp
 {
     display: flex;
@@ -154,11 +161,11 @@ li:hover {
 {
   border: 3px transparent;
   border-radius: 23%;
-  padding: 10px;
+  padding: 25px;
   /* color: #333; */
-  color: #fff;
+  color: #fafafa;
   cursor: pointer;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   color: white;
   list-style: none;
   
@@ -167,8 +174,12 @@ li:hover {
 }
 .socialcol:hover {
   transform: translateY(-5px);
-  color: #fff;
+  color: bisque;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+  /* color: #fff; White font color on hover */
+  /* background-color: #fff; A soft dark blue/grey background on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  /* text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); More pronounced shadow on hover */
 }
 
 .social,.socialcol a
@@ -182,6 +193,36 @@ li:hover {
     text-align: justify;
     margin: 10px;
 }
+.skills-container
+{
+  margin-bottom: 3%;
+}
+.total
+{
+  display: flex; /* Enables flexbox */
+    justify-content: space-between; /* Adjust spacing between child elements */
+    align-items: center; /* Align items vertically (if needed) */
+  
+}
+.icon {
+  text-decoration: none;
+  /* color: #333;  */
+  color: #fafafa;
+  font-size: 25px; /* Adjust the size as needed */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow effect */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+}
+
+.icon:hover {
+  /* color: #000; Darker shade for hover effect */
+  color: bisque;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* More pronounced shadow on hover */
+}
+
+.icon i {
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
 .cp
 {
     text-align: center;
@@ -252,6 +293,7 @@ label {
     color: #333;
    /* display: block;  */
     margin-bottom: 0.5rem; /
+    
   
   }
   input,textarea
@@ -266,6 +308,7 @@ label {
     width: 100%; 
     box-sizing: border-box; 
     margin-bottom: 1rem; 
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
     
   }
   input:focus, textarea:focus {
@@ -314,7 +357,8 @@ form {
 }
 .foot
 {
-    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    /* background: linear-gradient(135deg, #2575fc, #6a11cb); */
+    background: #34495e;
     color: white;
     text-align: center;
     padding: 2%;
